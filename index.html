@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .menu {
+      color: gainsboro;
+      background: rgb(68, 65, 65);
+      font-size: 20px;
+      margin: 20px 0;
+      width: 400px;
+      height: 190px;
+    }
+
+    .exemplo-01 > p {
+      display: none; /** oculta a tag **/
+    }
+
+    .exemplo-01:hover > p {
+      display: block; /** ao passar o mouse, texto aparece na tela **/
+    }
+
+    
+    .exemplo-02 {
+      background: forestgreen;
+      width: 160px;
+      height: 50px;
+      margin-top: 20px;
+    }
+
+    .exemplo-02 img {
+      width:350px;
+      display: flex;
+    }
+
+    .exemplo-02 > img {
+      display: none;
+    }
+
+    .exemplo-02:hover > img {
+      display: block;
+    }
+
+    .exemplo-02:hover {
+      color: darkorange;
+    }
+
+    .imagem {
+      width: 200px;
+      margin: 210px  0;
+      display: flex;
+    }
+
+    .img-01 {
+      width: 200px;
+    }
+
+    .img-02 {
+     height: 1000px;
+      width: 1200px;
+    }
+
+    .capa {
+      display: none; /** oculta imagem **/
+    }
+
+    .imagem:hover > .capa {
+    display: block;
+    }
+
+  </style>
+  <body>
+    <h1>Exemplo pseudo-class usando alguns exemplos hover</h1>
+    <div class="menu">
+      <div class="exemplo-01">
+        passe o mouse aqui para ler o comentario<!--texto fixo -->
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+          nisi ut velit suscipit optio temporibus adipisci cupiditate maiores
+          laudantium veritatis totam, ad itaque necessitatibus dolor quisquam
+          voluptatibus eligendi amet doloremque.
+        </p><!--texto que fica oculto-->
+      </div>
+    </div>
+    <div class="exemplo-02">
+      passe o mouse aqui
+      <img src="img/emoji.png" alt="" />
+    </div>
+    <div class="imagem">
+      <img  class="img-01" src="img/desenho.png" alt="" />
+      <div class="capa">
+        <img class="img-02"  src="img/soco.png" alt="">
+      </div>
+    </div>
+  </body>
+</html>
